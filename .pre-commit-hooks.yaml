@@ -5,6 +5,7 @@
   language: system
   types: [file, toml]
   files: Cargo\.(toml|lock)
+  args: [audit]
   pass_filenames: false
 - id: cbindgen-verify
   name: cbindgen-verify
