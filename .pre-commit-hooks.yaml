@@ -1,3 +1,11 @@
+- id: cargo-audit
+  name: cargo-audit
+  description: Check Cargo dependencies
+  entry: cargo-audit
+  language: system
+  types: [file, toml]
+  files: Cargo\.(toml|lock)
+  pass_filenames: false
 - id: cbindgen-verify
   name: cbindgen-verify
   description: Check that cbindgen bindings were generated correctly

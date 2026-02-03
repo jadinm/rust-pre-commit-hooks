@@ -9,13 +9,22 @@ Check the following repositories for hooks using:
 
 ## Available hooks
 
+### `cargo-audit`
+
+```yaml
+- repo: https://github.com/jadinm/rust-pre-commit-hooks
+  rev: v1.1.0
+  hooks:
+  - id: cargo-audit
+```
+
 ### `cbindgen-verify`
 
 For a repo with a single package:
 
 ```yaml
 - repo: https://github.com/jadinm/rust-pre-commit-hooks
-  rev: v1.0.0
+  rev: v1.1.0
   hooks:
   - id: cbindgen-verify
     args:
