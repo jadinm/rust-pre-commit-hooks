@@ -1,0 +1,9 @@
+- id: cbindgen-verify
+  name: cbindgen-verify
+  description: Check that cbindgen bindings were generated correctly
+  entry: cbindgen
+  language: system
+  types_or: [rust, toml, h]
+  pass_filenames: false
+  # At least, you'll need to add the following arguments
+  # args: ["--verify", "--output", "<your-generated-file.h>"]
