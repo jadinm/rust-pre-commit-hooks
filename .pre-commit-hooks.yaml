@@ -13,8 +13,8 @@
   entry: cargo-deny
   language: system
   types: [file, toml]
-  files: Cargo\.(toml|lock)
-  args: [deny]
+  files: (Cargo|deny)\.(toml|lock)
+  args: [deny, check]
   pass_filenames: false
 - id: cbindgen-verify
   name: cbindgen-verify
