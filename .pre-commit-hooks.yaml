@@ -7,6 +7,15 @@
   files: Cargo\.(toml|lock)
   args: [audit]
   pass_filenames: false
+- id: cargo-deny
+  name: cargo-deny
+  description: Check Cargo dependencies and licenses
+  entry: cargo-deny
+  language: system
+  types: [file, toml]
+  files: Cargo\.(toml|lock)
+  args: [deny]
+  pass_filenames: false
 - id: cbindgen-verify
   name: cbindgen-verify
   description: Check that cbindgen bindings were generated correctly
